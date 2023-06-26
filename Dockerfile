@@ -1,5 +1,5 @@
 FROM lsiobase/alpine:3.17 as builder
-LABEL maintainer="SuperNG6"
+LABEL maintainer="Berny Linville"
 
 WORKDIR /qbittorrent
 
@@ -31,4 +31,4 @@ RUN  apk add --no-cache python3 \
 
 # ports and volumes
 VOLUME /downloads /config
-EXPOSE 8080  6881  6881/udp
+EXPOSE 8080  16881  16881/udp

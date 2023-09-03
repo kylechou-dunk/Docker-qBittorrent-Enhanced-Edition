@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.17 as builder
+FROM lsiobase/alpine:3.18 as builder
 LABEL maintainer="Berny Linville"
 
 WORKDIR /qbittorrent
@@ -14,7 +14,7 @@ RUN cd /qbittorrent \
 
 # docker qBittorrent-Enhanced-Edition
 
-FROM lsiobase/alpine:3.17
+FROM lsiobase/alpine:3.18
 
 # environment settings
 ENV TZ=Asia/Shanghai
